@@ -47,7 +47,7 @@
 		<header id="home" class="home">
 			<div class="logo text-center">
 				<a href="#home">
-					<img src="#" alt="" title="" />
+					<img width="200" src="img/logo.png" alt="Prisca Cakes" title="Prisca Cakes" />
 				</a>
 			</div>
 			<div class="page-scroll text-center">
@@ -56,13 +56,13 @@
 				</a>
 			</div>
 		</header>
-		<nav class="navbar navbar-expand-sm navbar-pink bg-light font-weight-bold">
+		<nav class="navbar sticky-top navbar-expand-sm navbar-pink bg-light font-weight-bold" data-toggle="affix">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItens" aria-controls="menuItens" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 			</button>
 			<div id="menuItens" class="collapse navbar-collapse justify-content-center">
 				<ul class="navbar-nav text-center">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a  class="nav-link" href="#home">Início</a>
 					</li>
 					<li class="nav-item">
@@ -81,22 +81,89 @@
 			</div>
 		</nav>
 	</section>
-	<main class="container">
-		<section id="sobre">
-		
+	<main class="container cl-pink">
+		<section id="sobre" class="separar-secao">
+			<header class="text-center  font-weight-bold">
+				<h1 class="text-uppercase">Prisca Cakes</h1>
+				<span>Saiba sobre nossa história.</span>
+			</header>
+			<div class="separar-texto">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo ratione facilis molestias officia fugit atque animi, explicabo nemo ipsum recusandae quia odio quos cum doloribus optio necessitatibus, sunt eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo ratione facilis molestias officia fugit atque animi, explicabo nemo ipsum recusandae quia odio quos cum doloribus optio necessitatibus, sunt eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo ratione facilis molestias officia fugit atque animi, explicabo nemo ipsum recusandae quia odio quos cum doloribus optio necessitatibus, sunt eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo ratione facilis molestias officia fugit atque animi, explicabo nemo ipsum recusandae quia odio quos cum doloribus optio necessitatibus, sunt eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo ratione facilis molestias officia fugit atque animi, explicabo nemo ipsum recusandae quia odio quos cum doloribus optio necessitatibus, sunt eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo ratione facilis molestias officia fugit atque animi, explicabo nemo ipsum recusandae quia odio quos cum doloribus optio necessitatibus, sunt eaque!</p>
+			</div>
 		</section>
-		<section id="produtos">
-		
+		<section id="produtos"  class="separar-secao">
+			<header class="text-center font-weight-bold">
+				<h1 class="text-uppercase">Produtos</h1>
+				<span>O que a de melhor na vida.</span>
+			</header>
+			<div class="separar-texto">
+			</div>
 		</section>
-		<section id="galeria">
-		
+		<section id="galeria" class="separar-secao">
+			<header class="text-center font-weight-bold">
+				<h1 class="text-uppercase">Galeria</h1>
+				<span>Alguns de nossos serviços.</span>
+			</header>
+			<div class="separar-texto">
+			</div>
 		</section>
-		<section id="contato">
-		
+		<section id="contato" class="separar-secao">
+			<header class="text-center font-weight-bold">
+				<h1 class="text-uppercase">Contato</h1>
+				<span>Faça um orçamento.</span>
+			</header>
+			<div class="separar-texto">
+				<form method="post" action="http://www.example.com.br/cgi-bin/FormMail.pl"  accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset;  document.charset = 'ISO-8859-1';  window.onbeforeunload = function () {document.charset=originalCharset;};">
+					<div class="form-group">
+						<label for="nome">Nome:</label>
+						<input id="nome" name="realname" type="text" class="form-control" placeholder="Informe o Nome." />
+					</div>
+					<div class="form-group">
+						<label for="tel">Telefone:</label>
+						<input id="tel" name="tel" class="form-control" type="email" placeholder="Informe seu Telefone." />
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input id="email" name="email" class="form-control" type="email" placeholder="Informe o Email." />
+					</div>
+					<div class="form-group">
+						<label for="mensagem">Mensagem:</label>
+						<textarea name="message" class="form-control" placeholder="Sua Mensagem..."></textarea>
+					</div>
+					<input type="submit" class="btn btn-primary" value="Enviar" />
+					<input type="hidden" name="recipient" value="contato@example.com.br" />
+					<input type="hidden" name="subject" value="ContatoSite" />
+					<input type="hidden" name="redirect"  value="http://www.example.com.br" />
+					<input type="hidden" name="missing_fields_redirect"  value="http://www.example.com/erro.html" />
+					<input type="hidden" name="required" value="realname,tel,email,message" />
+				</form>
+			</div>
 		</section>
 	</main>
-	<footer>
-	
+	<footer class="separar-secao bg-dark">
+		<div class="container">
+			<div id="dadosSocial" class="row pdd-50">
+				<div class="col-sm-6">
+					<p>Endereço: Rua Monsenhor André Costa, Imbassay, Dias D'Ávila-BA<br />
+						Telefone: xx x xxxx-xxxx<br />
+						Email: xxxxxx@xxxx.com.br
+					</p>
+				</div>
+				<div class="col-sm-6 align-content-end">
+					<div class="row">
+						<a href="#"><i class="col-sm-1 fa fa-facebook-square fa-3x"></i></a>
+						<a href="#"><i class="col-sm-1 fa fa-instagram fa-3x"></i></a>
+						<a href="#"><i class="col-sm-1 fa fa-twitter-square fa-3x"></i></a>
+						<a href="#"><i class="col-sm-1 fa fa-skype fa-3x"></i></a>
+						<a href="#"><i class="col-sm-1 fa fa-linkedin-square fa-3x"></i></a>
+					</div>
+				</div>
+			</div>
+			<div id="footer-end" class="text-center bg-pink">
+				<p>Copyright &copy; 2018 Prisca Cakes - Todos os direitos reservados. Desenvolvido por <a href="http://www.alsupport.com.br">AL Support Electronic</a>.</p>
+			</div>
+		</div>
 	</footer>
 	
 	<!-- Scripts -->
@@ -114,5 +181,8 @@
 	
 	<!-- BootStrap 4-->
 	<script type="text/javascript" src="framework/bootstrap4/js/desenvolvimento/bootstrap.js"></script>
+	
+	<!-- Meu Script-->
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

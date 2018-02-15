@@ -1,5 +1,9 @@
 /* CSS Document */
 
+body {
+      position: relative; 
+ }
+
 /* Imagem topo da pagina*/
 .home {
 	width: 100%;
@@ -8,7 +12,7 @@
 	background-size: cover;
 }
 
-#home.home{
+#home.home {
 	padding: 200px 0 150px 0;
 }
 
@@ -32,7 +36,6 @@
 .navbar-nav li:hover {
 	border-top: 3px solid rgba(0, 0, 0, 0.5);
 }
-
 
 .navbar-pink {
 	box-shadow: 0px 15px 30px -23px rgba(255, 0, 128, 0.4);
@@ -63,6 +66,7 @@
 .navbar-pink .navbar-nav .nav-link.show,
 .navbar-pink .navbar-nav .nav-link.active {
   color: rgba(255, 0, 128, 0.9);
+	border-bottom: 3px solid rgba(255, 0, 128, 1);
 }
 
 .navbar-pink .navbar-toggler {
@@ -86,3 +90,93 @@
   color: rgba(255, 0, 128, 0.9);
 }
 
+/*Menu topo*/
+
+.navbar {
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.affix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* navbar collapsing */
+@media(max-width:34em) {
+    .navbar .navbar-nav>.nav-item {
+        float: none;
+        margin-left: .1rem;
+    }
+    .navbar .navbar-nav {
+        float:none !important;
+    }
+    .navbar .collapse.in, .navbar .collapsing  {
+        clear:both;
+    }
+}
+
+/* Conteudo */
+
+.separar-secao {
+	margin-top: 100px;
+}
+
+.separar-texto {
+	margin-top: 50px;
+}
+
+.cl-pink h1{
+	color: rgba(255, 0, 128, 0.9);
+}
+
+/* Contato */
+textarea {
+	resize : none;
+}
+
+/* footer */
+
+footer {
+	color: white;
+}
+footer a{
+	color: white;
+	font-weight: 600;
+}
+
+footer a:hover{
+	color: white;
+}
+
+#dadosSocial{
+	color: rgba(180, 180, 180, 0.9);
+}
+
+#dadosSocial i{
+	color: rgba(180, 180, 180, 0.9);
+}
+
+#dadosSocial a i:hover{
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-pink {
+	background-color: rgba(255, 0, 128, 0.9) !important;
+}
+#footer-end {
+	padding: 25px;
+	border-radius: 10px 10px 0 0;
+}
+#footer-end p {
+	margin: 0;
+}
+.pdd-50 {
+	padding: 50px;
+}
