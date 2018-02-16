@@ -39,21 +39,23 @@ $(document).ready(function() {
 ! function (a) {
 	"use strict";
 	a('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-		if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+		if (location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") && location.hostname === this.hostname) {
 			// Certifique-se de que this.hash tenha um valor antes de substituir o comportamento padrão
 			if (this.hash !== "") {
 				// Store hash
 				var e = a(this.hash);
 				// Usando o método animate () do jQuery para adicionar uma página suave
 				// O número opcional (800) especifica o número de milissegundos necessários para rolar para a área especificada
-				if ((e = e.length ? e : a("[name=" + this.hash.slice(1) + "]")).length) return a("html, body").animate({
-					scrollTop: e.offset().top - 100
-				}, 800)
+				if ((e = e.length ? e : a("[name=" + this.hash.slice(1) + "]")).length){
+					return a("html, body").animate({
+						scrollTop: e.offset().top - 100
+					}, 800);
+				}
 				// 800, "easeInOutExpo"), !1 deixa mais rapida a rolagem
 			}
 		}
 	}), a(".js-scroll-trigger").click(function () {
-		a(".navbar-collapse").collapse("hide")
+		a(".navbar-collapse").collapse("hide");
 		// Adicione scrollspy para o <body>
 	}), a("body").scrollspy({
 		target: "#menuItens",
@@ -65,7 +67,7 @@ $(document).ready(function() {
 		// .sr-icons animação de icones
 	e(), a(window).scroll(e), window.sr = ScrollReveal(), sr.reveal(".sr-icons", {
 		duration: 600,
-		scale: .3,
+		scale: 0.3,
 		distance: "0px"
 		// .sr-button animação de botões
 	}, 200), sr.reveal(".sr-button", {
@@ -74,7 +76,7 @@ $(document).ready(function() {
 		// .sr-contact animação de contato
 	}), sr.reveal(".sr-contact", {
 		duration: 600,
-		scale: .3,
+		scale: 0.3,
 		distance: "0px"
 		// .popup-gallery animação de Galeria
 	}, 300), a(".popup-gallery").magnificPopup({
