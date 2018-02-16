@@ -33,6 +33,9 @@
 	<link rel="stylesheet" type="text/css" href="framework/font-awesome/css/font-awesome.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="framework/font-awesome/css/font-awesome.min.css" /> -->
 	
+	<!-- Plugin CSS -->
+    <link href="framework/magnific-popup/producao/magnific-popup.css" rel="stylesheet">
+	
 	<!-- Meu CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" /> 
 	
@@ -51,8 +54,8 @@
 				</a>
 			</div>
 			<div class="page-scroll text-center">
-				<a href="#sobre">
-					<i class="fa fa-angle-down fa-5x"></i>
+				<a href="#sobre" class="js-scroll-trigger">
+					<i class="fa fa-angle-down fa-5x sr-button"></i>
 				</a>
 			</div>
 		</header>
@@ -63,26 +66,26 @@
 			<div id="menuItens" class="collapse navbar-collapse justify-content-center">
 				<ul class="navbar-nav text-center">
 					<li class="nav-item">
-						<a  class="nav-link" href="#home">Início</a>
+						<a  class="nav-link js-scroll-trigger" href="#home">Início</a>
+					</li>
+					<li class="nav-item ">
+						<a  class="nav-link js-scroll-trigger" href="#sobre">Sobre</a>
 					</li>
 					<li class="nav-item">
-						<a  class="nav-link" href="#sobre">Sobre</a>
+						<a  class="nav-link js-scroll-trigger" href="#produtos">Produtos</a>
 					</li>
 					<li class="nav-item">
-						<a  class="nav-link" href="#produtos">Produtos</a>
+						<a  class="nav-link js-scroll-trigger" href="#portfolio">Galeria</a>
 					</li>
 					<li class="nav-item">
-						<a  class="nav-link" href="#galeria">Galeria</a>
-					</li>
-					<li class="nav-item">
-						<a  class="nav-link" href="#contato">Contato</a>
+						<a  class="nav-link js-scroll-trigger" href="#contato">Contato</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</section>
-	<main class="container cl-pink">
-		<section id="sobre" class="separar-secao">
+	<main class="cl-pink">
+		<section id="sobre" class="container separar-secao">
 			<header class="text-center  font-weight-bold">
 				<h1 class="text-uppercase">Prisca Cakes</h1>
 				<span>Saiba sobre nossa história.</span>
@@ -92,7 +95,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo ratione facilis molestias officia fugit atque animi, explicabo nemo ipsum recusandae quia odio quos cum doloribus optio necessitatibus, sunt eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo ratione facilis molestias officia fugit atque animi, explicabo nemo ipsum recusandae quia odio quos cum doloribus optio necessitatibus, sunt eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo ratione facilis molestias officia fugit atque animi, explicabo nemo ipsum recusandae quia odio quos cum doloribus optio necessitatibus, sunt eaque!</p>
 			</div>
 		</section>
-		<section id="produtos"  class="separar-secao">
+		<section id="produtos"  class="container separar-secao">
 			<header class="text-center font-weight-bold">
 				<h1 class="text-uppercase">Produtos</h1>
 				<span>O que a de melhor na vida.</span>
@@ -100,15 +103,109 @@
 			<div class="separar-texto">
 			</div>
 		</section>
-		<section id="galeria" class="separar-secao">
+		<section id="portfolio" class="separar-secao p-0">
 			<header class="text-center font-weight-bold">
 				<h1 class="text-uppercase">Galeria</h1>
 				<span>Alguns de nossos serviços.</span>
 			</header>
 			<div class="separar-texto">
+				<div class="container-fluid p-0">
+					<div class="row no-gutters popup-gallery">
+					  <div class="col-lg-4 col-sm-6">
+						<a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+						  <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+						  <div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+							  <div class="project-category text-faded">
+								Category
+							  </div>
+							  <div class="project-name">
+								Project Name
+							  </div>
+							</div>
+						  </div>
+						</a>
+					  </div>
+					  <div class="col-lg-4 col-sm-6">
+						<a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+						  <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+						  <div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+							  <div class="project-category text-faded">
+								Category
+							  </div>
+							  <div class="project-name">
+								Project Name
+							  </div>
+							</div>
+						  </div>
+						</a>
+					  </div>
+					  <div class="col-lg-4 col-sm-6">
+						<a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+						  <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+						  <div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+							  <div class="project-category text-faded">
+								Category
+							  </div>
+							  <div class="project-name">
+								Project Name
+							  </div>
+							</div>
+						  </div>
+						</a>
+					  </div>
+					  <div class="col-lg-4 col-sm-6">
+						<a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+						  <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+						  <div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+							  <div class="project-category text-faded">
+								Category
+							  </div>
+							  <div class="project-name">
+								Project Name
+							  </div>
+							</div>
+						  </div>
+						</a>
+					  </div>
+					  <div class="col-lg-4 col-sm-6">
+						<a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+						  <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+						  <div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+							  <div class="project-category text-faded">
+								Category
+							  </div>
+							  <div class="project-name">
+								Project Name
+							  </div>
+							</div>
+						  </div>
+						</a>
+					  </div>
+					  <div class="col-lg-4 col-sm-6">
+						<a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+						  <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+						  <div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+							  <div class="project-category text-faded">
+								Category
+							  </div>
+							  <div class="project-name">
+								Project Name
+							  </div>
+							</div>
+						  </div>
+						</a>
+					  </div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section id="contato" class="separar-secao">
+		<section id="contato" class="container separar-secao">
 			<header class="text-center font-weight-bold">
 				<h1 class="text-uppercase">Contato</h1>
 				<span>Faça um orçamento.</span>
@@ -152,11 +249,11 @@
 				</div>
 				<div class="col-sm-6 align-content-end">
 					<div class="row">
-						<a href="#"><i class="col-sm-1 fa fa-facebook-square fa-3x"></i></a>
-						<a href="#"><i class="col-sm-1 fa fa-instagram fa-3x"></i></a>
-						<a href="#"><i class="col-sm-1 fa fa-twitter-square fa-3x"></i></a>
-						<a href="#"><i class="col-sm-1 fa fa-skype fa-3x"></i></a>
-						<a href="#"><i class="col-sm-1 fa fa-linkedin-square fa-3x"></i></a>
+						<a href="#"><i class="col-sm-1 fa fa-facebook-square fa-3x sr-icons"></i></a>
+						<a href="#"><i class="col-sm-1 fa fa-instagram fa-3x sr-icons"></i></a>
+						<a href="#"><i class="col-sm-1 fa fa-twitter-square fa-3x sr-icons"></i></a>
+						<a href="#"><i class="col-sm-1 fa fa-skype fa-3x sr-icons"></i></a>
+						<a href="#"><i class="col-sm-1 fa fa-linkedin-square fa-3x sr-icons"></i></a>
 					</div>
 				</div>
 			</div>
@@ -181,6 +278,11 @@
 	
 	<!-- BootStrap 4-->
 	<script type="text/javascript" src="framework/bootstrap4/js/desenvolvimento/bootstrap.js"></script>
+	
+	<!-- Plugin JavaScript -->
+    <script src="framework/jquery-easing/desenvolvimento/jquery.easing.js"></script>
+    <script src="framework/scrollreveal/desenvolvimento/scrollreveal.js"></script>
+    <script src="framework/magnific-popup/desenvolvimento/jquery.magnific-popup.js"></script>
 	
 	<!-- Meu Script-->
 	<script type="text/javascript" src="js/script.js"></script>
